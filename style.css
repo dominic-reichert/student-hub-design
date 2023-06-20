@@ -209,6 +209,14 @@ select {
   pointer-events: none;
 }
 
+.result-heading span:first-of-type:empty::before {
+  content: "Choose a timemodel &";
+}
+
+.result-heading span:last-of-type:empty::before {
+  content: "Choose a class";
+}
+
 .student-card {
   display: flex;
   justify-content: flex-start;

@@ -48,10 +48,10 @@
             </form>
             <div class="selection">
                 <div class="select-container">
-                    <select name="classmonth" id="classmonth">
-                        <option value="November Class 2021">NovemberClass2021</option>
-                        <option value="December Class 2021">DecemberClass2021</option>
-                        <option value="January Class 2021">JanuaryClass2021</option>
+                    <select name="classmonth" class="classmonth">
+                        <option value="November Class of 2021" selected="selected">NovemberClass2021</option>
+                        <option value="December Class of 2021">DecemberClass2021</option>
+                        <option value="January Class of 2021">JanuaryClass2021</option>
                     </select>
                     <div class="select-overlay">
                         <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -63,8 +63,8 @@
                 </div>
 
                 <div class="select-container">
-                    <select name="timemodel" id="timemodel">
-                        <option value="Full-time">Full-time</option>
+                    <select name="timemodel" class="timemodel">
+                        <option value="Full-time" selected="selected">Full-time</option>
                         <option value="Part-time">Part-time</option>
                     </select>
                     <div class="select-overlay">
@@ -79,7 +79,9 @@
         </section>
 
         <section>
-            <h3 class="result-heading">Full-time November Class of 2021</h3>
+            <h3 class="result-heading">
+                <span class="timeResult"></span> <span class="classResult"></span>
+            </h3>
 
             <div class="student-card">
                 <svg class="imgPerson" xmlns="http://www.w3.org/2000/svg" class="bi bi-person" viewBox="0 0 16 16">
@@ -138,7 +140,7 @@
         </section>
 
     </main>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
